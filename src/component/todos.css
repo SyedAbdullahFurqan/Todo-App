@@ -1,0 +1,14 @@
+button{ 
+padding: 10px 5px;
+
+
+
+}#flex{
+
+display: flex;
+justify-content: center;
+margin: 20px 0px;padding: 10px 0px;
+}
+div p{
+    margin: 0px 20px;
+}

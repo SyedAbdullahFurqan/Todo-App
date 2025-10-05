@@ -1,0 +1,27 @@
+input{
+
+border: 2px solid;
+padding: 10px 0px;
+margin: 0px 20px;
+}label{margin: 20px 0px;}
+.container > h1{
+    color: red;margin-bottom: 20px;
+}
+
+.sumbit{
+color: blue;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.gray{
+color: gray;
+    background-color: blue;cursor: pointer;
+}.content input{
+width: 400px;
+margin: auto;
+margin-bottom: 20px;
+}
+
+
+
