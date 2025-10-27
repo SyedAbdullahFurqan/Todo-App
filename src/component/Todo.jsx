@@ -127,8 +127,8 @@ function clear() {
       setTodo({ name: "", des:"",id: "0" })
     }
   }
-
-  console.log(Todo)
+  console.log([...Form]   )
+  console.log({...Todo})
   function hand(e) {
     setTodo({
       ...Todo,
@@ -179,7 +179,7 @@ console.log(Completed)
 
   <h1 className='text-white uppercase text-4xl'> TOdo list app    </h1>
 
-
+<span className='text-white uppercase  '>Credit by abdullah furqan</span>
       <div className='bg-gray-700 w-full h-fit my-5 py-5 rounded-2xl'>
 
         <div className='pt-6  grid sm:grid-cols-2'>
@@ -196,11 +196,11 @@ console.log(Completed)
         {Edit ?
           <button className=' bg-cyan-600 text-white uppercase cursor-pointer' onClick={() => onclicked("add")} >Add</button>
           :
-          <button className=' bg-amber-400 uppercase cursor-pointer' onClick={() => onclicked("edit")} >Edit </button>
+          <button className=' bg-cyan-600 uppercase cursor-pointer' onClick={() => onclicked("edit")} >Edit </button>
 
         }</div>
       </div>
-      <div className='w-80 my-5 '>
+      <div className='w-80 my-5 '>                        
 <button  className={`px-4 py-2 cursor-pointer  ${
       Change ? "bg-cyan-600 text-white" : "bg-white text-black"
     }`}  onClick={()=> setChange(true)}>Todo</button>
@@ -215,12 +215,15 @@ console.log(Completed)
 
             <>
             
-            <div className='flex flex-col justify-between border-2 border-amber-50 rounded-2xl p-4 mx-4 bg-gray-800' >
-             <div>
-              <h1 className='text-3xl uppercase text-cyan-500 pt-3 '>{lis.name}</h1>
+            <div className='flex flex-col justify-between border-2  border-amber-50 rounded-2xl p-4 mx-4 bg-gray-800' >
             
+            
+                  <h1 className='text-3xl uppercase text-cyan-500 pt-3 overflow-hidden  '>{lis.name}</h1>
+            <p className='py-5 text-gray-300  overflow-hidden  '>{lis.des}</p> 
+
+             <div>
+        
              
-<p className='py-5 text-gray-300  '>{lis.des}</p> 
 
 </div>
 <div className=' flex gap-4 mt-4 justify-end'>
