@@ -179,7 +179,7 @@ console.log(Completed)
 
   <h1 className='text-white uppercase text-4xl'> TOdo list app    </h1>
 
-<span className='text-white uppercase  '>Credit by abdullah furqan</span>
+<span className='text-white uppercase  '>Create by abdullah furqan</span>
       <div className='bg-gray-700 w-full h-fit my-5 py-5 rounded-2xl'>
 
         <div className='pt-6  grid sm:grid-cols-2'>
