@@ -182,24 +182,28 @@ console.log(Completed)
 <span className='text-white uppercase  '>Create by abdullah furqan</span>
       <div className='bg-gray-700 w-full h-fit my-5 py-5 rounded-2xl'>
 
-        <div className='pt-6  grid sm:grid-cols-2'>
-          <div>
+        <div className='pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4'>
+          <div className='flex flex-col w-full'>
 
-<span className='text-white'>Title</span>
-        <input className='text-white sm:w-70 ' placeholder=' Write your Title' type="text" name='name' onChange={hand} value={Todo.name} />
+    <label className="text-white mb-2">Title</label>
+        <input className='text-white ' placeholder=' Write your Title' type="text" name='name' onChange={hand} value={Todo.name} />
    
    </div>
-   <div className='my-4 sm:my-0'>
-    <span htmlFor="" className='text-white '>Description</span>
-<input type="text" className=' text-white sm:w-50' placeholder=' Write your Desciption' name='des' onChange={hand} value={Todo.des} />
+   <div className='flex flex-col w-full'>
+  <label className="text-white mb-2">Description</label>
+<input type="text" className=' text-white ' placeholder=' Write your Desciption' name='des' onChange={hand} value={Todo.des} />
 
+        </div>
+
+      </div>
+        <div className="w-full mt-4 sm:w-auto">
         {Edit ?
-          <button className=' bg-cyan-600 text-white uppercase cursor-pointer' onClick={() => onclicked("add")} >Add</button>
+          <button className=' bg-cyan-600 text-white uppercase cursor-pointer pt-2 w-40 m-auto' onClick={() => onclicked("add")} >Add</button>
           :
           <button className=' bg-cyan-600 uppercase cursor-pointer' onClick={() => onclicked("edit")} >Edit </button>
 
-        }</div>
-      </div>
+        }
+        </div>
       <div className='w-80 my-5 '>                        
 <button  className={`px-4 py-2 cursor-pointer  ${
       Change ? "bg-cyan-600 text-white" : "bg-white text-black"
